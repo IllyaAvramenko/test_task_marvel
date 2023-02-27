@@ -108,7 +108,12 @@ export const Marvel: FC = () => {
             </div>
             <div className="marvel__content">
                <div className='marvel__content_header'>
-                  <Input type="text" value={searchValue} onChange={(e) => dispatch(setSearchValue(e.target.value))}/>
+                  <Input 
+                     type="text"
+                     value={searchValue}
+                     onChange={(e) => dispatch(setSearchValue(e.target.value))}
+                     placeholder="Search by name"
+                  />
                </div>
                <div className="marvel__content_table">
                   <InfinitieScroll
