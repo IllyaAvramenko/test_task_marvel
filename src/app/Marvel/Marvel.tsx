@@ -17,8 +17,14 @@ export const Marvel: FC = () => {
    const refInfinitie = useRef<HTMLDivElement>();
 
    useEffect(() => {
-      getData();
+      if (searchValue.length >= 3) {
+         getData();
+      }
    }, [debouncedSearch]);
+
+   useEffect(() => {
+      getData();
+   }, []);
 
    const columns: ColumnType[] = [
       {
