@@ -108,7 +108,7 @@ export const Marvel: FC = () => {
                   <InfinitieScroll
                      next={() => getData(offset + limit)}
                      isLoading={isLoading}
-                     height={600}
+                     height={400}
                      isMore={isMore}
                      ref={refInfinitie}
                   >
