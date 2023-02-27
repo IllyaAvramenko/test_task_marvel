@@ -28,8 +28,9 @@ export const CharacterModal: FC<IProps> = ({ isVisible, onClose, isBackdropClosa
                   onClose={onClose}
                />
                <ModalBody>
-                  {currentCharacter.description}
-                  <img src={currentCharacter?.thumbnail?.path || ''} alt="" />
+                  {currentCharacter.description.length 
+                     ? currentCharacter.description 
+                     : `There is no infrmation about ${currentCharacter.name}`}
                </ModalBody>
             </>
          )}
