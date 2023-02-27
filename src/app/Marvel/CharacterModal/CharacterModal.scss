@@ -1,0 +1,16 @@
+.characterModal {
+   &__loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+   }
+
+   &__error {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      color: red;
+   }
+}

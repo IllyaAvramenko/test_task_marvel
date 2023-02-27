@@ -1,0 +1,81 @@
+.marvel {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 20px;
+
+   &__header {
+      display: flex;
+      margin-bottom: 25px;
+      color: var(--secondary-color, #202020);;
+   }
+
+   &__content {
+      background-color: #fff;
+
+      &_header {
+         display: flex;
+         padding: 20px;
+      }
+
+      &_table {
+         table {
+            border-collapse: collapse;
+            background: #fff;
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+
+            thead {
+               tr {
+                  height: 60px;
+                  
+                  th {
+                     font-size: 18px;
+                     color: white;
+                     line-height: 1.2;
+                     font-weight: 600;
+                     background: var(--secondary-color, #202020);
+                     text-align: left;
+                     padding: 10px 25px;
+                  }
+               }
+            }
+
+            tbody {
+               tr {
+                  height: 50px;
+                  font-size: 15px;
+                  color: #201f1f;
+                  line-height: 1.2;
+                  font-weight: unset;
+                  cursor: pointer;
+                  transition: all 0.1s;
+                  
+                  td {
+                     text-align: left;
+                     padding: 10px 25px;
+                  }
+                  
+                  &:hover {
+                     background-color: #eee;
+                     color: #212529;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .table__description {
+      line-height: 18px;
+      max-width: 600px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
+}
+

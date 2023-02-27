@@ -1,0 +1,13 @@
+.input {
+   position: relative;
+   input {
+      padding: 10px 10px 10px 30px;
+      border-radius: 2px;
+      border: 1px solid #eee;
+   }
+   &__icon {
+      position: absolute;
+      left: 9px;
+      height: 100%;
+   }
+}

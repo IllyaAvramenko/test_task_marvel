@@ -1,0 +1,44 @@
+.table {
+   width: 100%;
+   border-spacing: 0;
+   overflow-y: auto;
+   background-color: #fff;
+
+   thead {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #fff;
+
+      th {
+         border: 0;
+         white-space: nowrap;
+         font-size: 14px;
+         padding: 10px;
+         color: #2d2d2d;
+         font-weight: 500;
+      }
+   }
+
+   tbody {
+      td {
+         vertical-align: middle;
+         border-color: #dedede;
+      }
+   }
+
+   &__loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+
+   &__error {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      color: red;
+   }
+}
