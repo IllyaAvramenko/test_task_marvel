@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { ICharacter, MarvelResponseType, ResponseWithPagination } from '../types';
 
-const baseUrl = 'https://gateway.marvel.com/v1/public';
-const apiKey = '142633999ef868eb063e8e442362dca3';
+const baseUrl = process.env.REACT_APP_BASE_URL;
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export class MarvelService {
    async getCharacters(
