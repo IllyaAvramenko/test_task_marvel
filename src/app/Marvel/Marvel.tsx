@@ -19,6 +19,8 @@ export const Marvel: FC = () => {
    useEffect(() => {
       if (searchValue.length >= 3) {
          getData();
+      } else if (searchValue.length === 0) {
+         getData();
       }
    }, [debouncedSearch]);
 

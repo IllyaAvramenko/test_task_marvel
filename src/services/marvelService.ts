@@ -10,7 +10,7 @@ export class MarvelService {
       offset: number = 0,
       limit: number = 20
    ): Promise<ResponseWithPagination<ICharacter>> {
-      let requestUrl = `${baseUrl}/characters?limit=${limit}&apikey=${apiKey}`;
+      let requestUrl = `${baseUrl}/characters?limit=${limit}&apikey=${apiKey}`; // There is no way to set apiKey into headers in marvel API
 
       if (search) {
          requestUrl +=  `&nameStartsWith=${search}`;
